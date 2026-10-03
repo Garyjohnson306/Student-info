@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Summary</title>
+</head>
+
+<body>
+    <h1>Student Registration Summary</h1>
+    <br>
+
+    <p>Student Name: {{ student_name }}</p>
+    <p>Student ID: {{ student_id }}</p>
+    <p>Student Major: {{ major }}</p>
+    <p>Student class standing: {{ class_standing }}</p>
+    <p>Expected Graduation Year: {{ graduation_year }}</p>
+    <p>Comments: {{ comments }}</p>
+    {% for language in languages %}
+        <p>Languages: {{ language }}</p>
+    {% endfor %}
+
+</body>
+
+</html>
